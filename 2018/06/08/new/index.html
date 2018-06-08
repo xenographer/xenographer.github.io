@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="personal blog"><title>Markdown 基础语法 | Xenographia</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Markdown 基础语法</h1><a id="logo" href="/.">Xenographia</a><p class="description">Gather the Pieces of Thought</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Markdown 基础语法</h1><div class="post-meta">Jun 8, 2018</div><div class="post-content"><p>这是一个普通文本</p>
+<h1 id="当在句子的下一行加上"><a href="#当在句子的下一行加上" class="headerlink" title="当在句子的下一行加上=="></a>当在句子的下一行加上==</h1><h2 id="或者加上–"><a href="#或者加上–" class="headerlink" title="或者加上–"></a>或者加上–</h2><p>就成了最高阶标题和第二阶标题<br>任何数量的=或-都有效，但至少是两个<br>在句子前面加入不同数量的#号的话，从一个到六个，分别可以创建一级到六级标题。H1~H6</p>
+<p>#加一个</p>
+<p>##加两个</p>
+<p>###加三个</p>
+<p>####加四个</p>
+<p>#####加五个</p>
+<p>######加六个</p>
+<p>#######加七个，六个已经是极限了，所以这个仍然是六级标题</p>
+<p>在句子前面打&gt;号，是blockquote，引用一个段落</p>
+<blockquote>
+<p>一个没有闪光点的人，身处在一个广阔的世界里，总是面临着声张自我与逃避审视目光的心理斗争。我在这里，请看我，请发现我。我不存在，别看我，别人比我有趣。<br>bq可以嵌套<br>一个没有闪光点的人，</p>
+<blockquote>
+<p>身处在一个广阔的世界里，<br>总是面临着声张自我与逃避审视目光的心理斗争。</p>
+<blockquote>
+<p>我在这里，请看我，请发现我。</p>
+<blockquote>
+<p>我不存在，别看我，别人比我有趣。</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>只要在前面加上不同数量的&gt;<br>区块内可以使用其他语法，包括标题，列表等</p>
+<h1 id="关于列表"><a href="#关于列表" class="headerlink" title="关于列表"></a>关于列表</h1><p>在词语前面加上+号或者-号或者*号，注意和词语之间要加空格</p>
+<ul>
+<li>这是一个列</li>
+</ul>
+<ul>
+<li>这也是一个列</li>
+</ul>
+<ul>
+<li>这也是的<br>上面的都是无序号列表<br>有序号的列表是数字接上一个英文的句点</li>
+</ul>
+<ol>
+<li>sdqd1</li>
+<li>dsaf</li>
+<li>sag</li>
+</ol>
+<p>在行首出现数字加句点的情况，为避免混乱，数字和点之间加反斜杠<br>18.22.22</p>
+<p>用三个以上的星号、底线来建立一个分隔线，行内不能有其他东西</p>
+<hr>
+<hr>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><ul>
+<li>行内链接用方括号[]<ul>
+<li>比如说<a href="baidu.com">baidu.com</a><br>写法是[方括号里面是链接的名称] (后面紧跟着圆括号输入链接地址)</li>
+</ul>
+</li>
+<li>参考链接<ul>
+<li>链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记，接着，在文件的任意处，把这个标记的链接内容定义出来：</li>
+<li>[链接的名称]  [链接的类型标识] </li>
+<li>[链接类型标识] ：&lt;http：//blablablabla&gt;</li>
+</ul>
+</li>
+</ul>
+<h1 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h1><p>用<em>号或_包围需要强调的语句<br>两边都是单个星号</em>单个星号强调<em>就是斜体<br>两边都是两个星号<strong>双星号强调</strong>就是加粗<br>如果三个呢**</em>强调***就是斜体加粗<br>如果需要在里面插入星号或底线，在前面加反斜杠转译<br>如果两边都有空白</p>
+<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p>一个惊叹号 !<br>接着一个方括号，里面放上图片的替代文字<br>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的 ‘title’ 文字。<br><strong><img src="/path/to/img.jpg" alt="Alt text" title="Optional title"></strong><br>! [ Alt text] (/path/to/img.jpg “Optional title”)</p>
+<h1 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h1><p><a href="http://baidu.com" target="_blank" rel="noopener">http://baidu.com</a><br>&lt; <a href="http://baidu.com" target="_blank" rel="noopener">http://baidu.com</a> &gt;<br>用&lt;&gt;括起来</p>
+<h1 id="字体设置"><a href="#字体设置" class="headerlink" title="字体设置"></a>字体设置</h1><p><strong>&lt;font face=”微软雅黑 color=gray size=42&gt;文字</strong></p>
+<ul>
+<li><em>&lt; font face =”微软雅黑 color=gray size=42&gt;文字  </em>   *</li>
+</ul>
+</div><div class="tags"></div><div class="post-nav"><a class="pre" href="/2018/06/08/Little boxes/">Little boxes歌词翻译</a><a class="next" href="/2018/06/08/诗歌创作1/">2018年6月8日</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://yoursite.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/一些思考/">一些思考</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/歌词翻译/">歌词翻译</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/浮生随记/">浮生随记</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/组词造句/">组词造句</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/臆呓𫍽谵/">臆呓𫍽谵</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/诗歌创作/">诗歌创作</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/诗歌翻译/">诗歌翻译</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Metalica/" style="font-size: 15px;">Metalica</a> <a href="/tags/Jose-Gonzales/" style="font-size: 15px;">Jose Gonzales</a> <a href="/tags/society/" style="font-size: 15px;">society</a> <a href="/tags/REM/" style="font-size: 15px;">REM</a> <a href="/tags/The-Band-Perry/" style="font-size: 15px;">The Band Perry</a> <a href="/tags/little-boxes/" style="font-size: 15px;">little boxes</a> <a href="/tags/Hello-Saferide/" style="font-size: 15px;">Hello Saferide</a> <a href="/tags/smog/" style="font-size: 15px;">smog</a> <a href="/tags/玛丽莲曼森/" style="font-size: 15px;">玛丽莲曼森</a> <a href="/tags/Ansul-Noor/" style="font-size: 15px;">Ansul Noor</a> <a href="/tags/Mad-World/" style="font-size: 15px;">Mad World</a> <a href="/tags/Linkin-Park/" style="font-size: 15px;">Linkin Park</a> <a href="/tags/Антон-Заславский-Zedd/" style="font-size: 15px;">Антон Заславский,Zedd</a> <a href="/tags/悲惨世界/" style="font-size: 15px;">悲惨世界</a> <a href="/tags/组词造句/" style="font-size: 15px;">组词造句</a> <a href="/tags/李立阳/" style="font-size: 15px;">李立阳</a> <a href="/tags/马克思-燕妮/" style="font-size: 15px;">马克思,燕妮</a> <a href="/tags/玛雅安吉璐/" style="font-size: 15px;">玛雅安吉璐</a> <a href="/tags/邓巴/" style="font-size: 15px;">邓巴</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/06/08/society/">society歌词翻译</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/08/No one is there/">NO-ONE IS THERE歌词翻译</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/08/Long Lost Pen Pal/">Long Lost Pen Pal歌词翻译</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/08/Vessel in Vain/">Vessel in Vain歌词翻译</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/08/致燕妮——卡尔马克思/">《致燕妮》 卡尔亨利马克思</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/08/Little boxes/">Little boxes歌词翻译</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/08/new/">Markdown 基础语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/08/诗歌创作1/">2018年6月8日</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/08/If I Die Young歌词翻译/">If I Die Young——The Band Perry</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/08/mad world/">Mad World歌词翻译</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">Xenographia.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
